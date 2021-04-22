@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <ImageView
+            android:id="@+id/lucky_dice_image"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/dice_1"
+            />
+
+        <Space
+            android:id="@+id/space0"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/lucky_dice_image"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lucky_dice_image"
+            />
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/title"
+            />
+
+        <ImageView
+            android:id="@+id/dice_image"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_below="@id/space1"
+            android:src="@drawable/dice_1"
+            />
+
+        <TextView
+            android:id="@+id/dice_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dice_image"
+            />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/dice_result"
+            />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/roll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space2"
+            android:layout_centerHorizontal="true"
+            android:text="Roll Dice!"
+            />
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/roll_button"
+            />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/quit_lucky_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space3"
+            android:layout_centerHorizontal="true"
+            android:text="Return to Main"
+            />
+
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/quit_lucky_dice"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
